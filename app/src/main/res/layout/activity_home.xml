@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/blue"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/arizonia"
+            android:text="My Chat"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_settings"
+            android:layout_width="45dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_baseline_settings_24"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/img_logout"
+            android:layout_width="45dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/logout_128" />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>

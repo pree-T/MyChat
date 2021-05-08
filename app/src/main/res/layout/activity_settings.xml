@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".Activity.SettingsActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        app:srcCompat="@drawable/ic_baseline_done_24"
+        app:tint="@color/white"
+        android:background="@color/blue"
+        android:contentDescription="@string/todo"
+        tools:ignore="RtlHardcoded"
+        android:id="@+id/save"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_baseline_add_a_photo_24"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/setting_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:autofillHints="T0DO"
+        android:background="@null"
+        android:ems="10"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/setting_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@null"
+        android:ems="10"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="Hey there!I am usimg MyChat."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="LabelFor"
+        android:autofillHints="**" />
+
+
+</LinearLayout>
